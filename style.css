@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkred;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px;                
+    width: 95vw;
+    max-width: 1600px;
+  }
+
+  .btn--remove{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 1rem;  
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 25px;
+    border-radius: 35px;
+  }
+
+.header--mandtje{
+  position: absolute;
+  top: 20px;
+  left: 2150px;
+  display: flex;
+  align-items: center;
+  }
+
+  .cart-badge {
+  position: absolute;
+  top: -1px;
+  right: 155px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 4px 10px;
+}
+
+  
+  .header--mandtje img {
+    width: 80px; 
+    height: auto;
+    cursor: pointer;
+  }  
+
+  .card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    height: 500px;           
+    width: 100%;              
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-price {
+    font-size: 30px;
+  }
+  
+.product-name {
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+  
+  .stars {
+    color: gold;
+  }
+  
+  .btn--working{
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  .out-of-stock {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .not-available {
+    color: red;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .card-wrapper {
+    position: relative;
+    box-shadow: black 0px 0px 20px;
+  }
+  
+  .product-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    padding-left: 45px;
+  }
