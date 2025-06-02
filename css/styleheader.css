@@ -1,0 +1,380 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
+    /* font is 10px */
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+      font-size: 1.6rem;
+}
+
+header {
+    background-color: gray;
+    display: flex;
+    height: 17rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-right: 3rem;
+    color: white;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: black 0.2rem 0.2rem 0.5rem;
+    border-radius: 1rem;
+
+}
+.logoheader {
+    width: 15rem;
+    aspect-ratio: 1 / 1;
+    padding-left: 1rem;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    direction: ltr;
+}
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+header a:hover {
+color: purple;
+cursor: pointer;
+}
+
+.dark-mode {
+    color: white !important;
+    background-color: black !important;
+    * {
+        color: white !important;
+    }
+}
+
+h1{
+    color: black;
+    }
+
+.links{
+    color: black;
+}
+
+.darkmode{
+    height: 12rem;
+    width: 10rem;
+    margin-left: 7rem;
+    padding-top: 10rem;
+
+}
+
+.btn-working-darkmode{
+    box-shadow: black 0.2rem 0.2rem 0.5rem;
+    background-color: grey	;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.Slogan{
+    font-size: 3rem;
+    margin-top: 10rem;
+    height: 50rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+}
+
+.Slogan-txt{
+    font-size: 10rem;
+    color: black;
+    padding-left: 15rem;
+    height: 20rem;
+}
+
+.btn-working{
+    width:  50rem;
+    height: 10rem;
+    margin-left: 18rem;
+    margin-top: 10rem;
+    font-size: 5rem;
+    background-color: grey;
+    color: turquoise;
+    border-radius: 4rem;
+
+}
+
+.Slogan-img{
+    width: 80rem;
+    height: 43rem;
+    margin-left: 40rem;
+    padding-right: 12rem;
+    padding-top: 3rem
+}
+
+.best-dls{
+    font-size: 10rem;
+    margin-left: 40rem  ;
+}
+
+.producteniets{
+    display: flex;
+}
+
+.aanbieding-img{
+    width: 80rem;
+    height: 50rem;
+    border-radius: 1rem;
+    box-shadow: black 0.2rem 0.2rem 0.5rem;
+    margin-left: 20rem;
+}
+
+.aanbiedingen-deal{
+    width: 50rem;
+    height: 50rem;
+    margin-left: 5  rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dls-txt{
+    display: flex;
+    height: 40rem;
+    width: 100rem;
+    padding-left: 35rem;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20rem;
+}
+
+.link-s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2.5rem;
+    color: black;
+    background-color: grey;
+    margin: 2rem auto 0 auto;
+    width: 30rem;
+    height: 6rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -10rem;
+    margin-right: 20rem;
+    box-shadow: black 0.2rem 0.2rem 0.5rem;
+}
+
+.img3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3rem;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 7rem;
+    border-radius: 1rem;
+}
+
+.aanbieding-img3 {
+    width: 37rem;
+    height: 39rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: black 0.2rem 0.2rem 0.5rem;
+}
+
+.footer {
+    background-color: gray;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    box-shadow: black 0.2rem 0.2rem 0.5rem;
+}
+
+.footer-social {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: underline;
+    margin: 0 0.5rem;
+    transition: color 0.2s;
+}
+
+.footer-social a:hover {
+    color: purple;
+}
+
+.footer-nav {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: purple;
+}
+
+@media (max-width: 1200px) {
+    .Slogan-img {
+        width: 50vw;
+        height: auto;
+        margin-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Slogan-txt {
+        font-size: 6rem;
+        padding-left: 2rem;
+    }
+    .btn-working {
+        width: 90%;
+        font-size: 3rem;
+        margin-left: 2rem;
+    }
+    .aanbieding-img {
+        width: 50vw;
+        height: auto;
+        margin-left: 2rem;
+    }
+    .best-dls {
+        font-size: 5rem;
+        margin-left: 2rem;
+    }
+    .img3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .aanbieding-img3 {
+        width: 60vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        margin: 1rem;
+    }
+    .logoheader {
+        width: 8rem;
+        padding-left: 0;
+    }
+    .Slogan {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 2rem 1rem;
+    }
+    .Slogan-img {
+        width: 90vw;
+        margin-left: 0;
+        padding-right: 0;
+        margin-top: 2rem;
+    }
+    .Slogan-txt {
+        font-size: 3.5rem;
+        padding-left: 0;
+        text-align: center;
+    }
+    .btn-working {
+        width: 90vw;
+        font-size: 2rem;
+        margin-left: 0;
+    }
+    .aanbieding-img {
+        width: 90vw;
+        margin-left: 0;
+    }
+    .best-dls {
+        font-size: 3rem;
+        margin-left: 0;
+    }
+    .dls-txt {
+        width: 90vw;
+        padding-left: 0;
+        font-size: 1.5rem;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .link-s {
+        width: 90vw;
+        font-size: 1.5rem;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+    .img3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .aanbieding-img3 {
+        width: 90vw;
+        height: auto;
+    }
+    .footer {
+        margin: 2rem 1rem 1rem 1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .Slogan-txt {
+        font-size: 2rem;
+    }
+    .btn-working {
+        font-size: 1.2rem;
+        height: 4rem;
+    }
+    .best-dls {
+        font-size: 2rem;
+    }
+    .footer-social, .footer-nav {
+        font-size: 1.2rem;
+    }
+}
