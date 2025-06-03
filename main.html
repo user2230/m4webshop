@@ -20,6 +20,7 @@
         </p>
       </div>
   </header>
+  
   <div class="header--mandtje">
     <img class="mandtje" src="img/mandtje.png" alt="mandtje">
     <div class="cart-badge" id="cart-count">0</div>
@@ -29,6 +30,10 @@
 
 
   </div>
+  <div class="search-bar-wrapper">
+    <input type="text" id="search-input" class="search-input" placeholder="Zoek op naam, platform, etc...">
+    <button id="search-btn" class="search-btn">Zoeken</button>
+  </div>
   <div class="main-content">
     <div id="div1" class="container">
     </div>
@@ -36,6 +41,20 @@
 
   </section>
   <script src="main.js"></script>
+  <script>
+    // Search bar logic
+    const searchInput = document.getElementById('search-input');
+    const searchBtn = document.getElementById('search-btn');
+    function filterCards() {
+      const query = searchInput.value.toLowerCase();
+      document.querySelectorAll('.game-item').forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(query) ? '' : 'none';
+      });
+    }
+    searchInput.addEventListener('input', filterCards);
+    searchBtn.addEventListener('click', filterCards);
+  </script>
 </body>
 
 </html>

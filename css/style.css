@@ -35,15 +35,17 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 90vh;
-  height: 50rem;
+  height: auto;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 150px;
+  gap: 4rem;
   width: 95vw;
   max-width: 1600px;
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .btn--remove {
@@ -96,6 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 60rem;
 }
 
 .product-price {
@@ -122,6 +125,8 @@ body {
 }
 .stars {
   color: gold;
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
 
 .btn--working {
@@ -151,12 +156,12 @@ body {
 }
 
 .product-imgs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 0 auto;
   height: 300px;
   width: 300px;
-  padding-left: 45px;
+  padding-left: 0;
+  object-fit: contain;
 }
 
 .head {
@@ -213,6 +218,41 @@ body {
   justify-content: center;
 }
 
+.search-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+  gap: 1rem;
+}
+.search-input {
+  width: 350px;
+  max-width: 90vw;
+  padding: 1.2rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid #e62429;
+  font-size: 1.6rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  outline: none;
+  transition: border 0.2s;
+}
+.search-input:focus {
+  border: 2px solid #e62429;
+}
+.search-btn {
+  background: #e62429;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.6rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.search-btn:hover {
+  background: #b71c1c;
+}
 @media (max-width: 600px) {
   .logo {
     width: 8rem;
@@ -221,6 +261,34 @@ body {
   }
   .section-top {
     padding: 20px;
+  }
+  .search-bar-wrapper {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .search-input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem 1.2rem;
+  }
+  .search-btn {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 90vw;
+    max-width: 98vw;
+    gap: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 98vw;
+    gap: 2rem;
   }
 }
 

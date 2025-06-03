@@ -151,6 +151,7 @@ h1{
     border-radius: 1rem;
     box-shadow: black 0.2rem 0.2rem 0.5rem;
     margin-left: 20rem;
+    object-fit: cover;
 }
 
 .aanbiedingen-deal{
